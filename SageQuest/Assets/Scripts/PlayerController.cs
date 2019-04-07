@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour {
         rigidBody.GetContacts(contactPoints);
 
         if (contactPoints.Length > 0) {
-            grounded = contactPoints[0].normal.y == 1;
-            collided = contactPoints[0].normal.x != 0;
+            grounded = contactPoints[0].normal.y == 1 && contactPoints[0].collider.CompareTag("Solid");
+            collided = contactPoints[0].normal.x != 0 && contactPoints[0].collider.CompareTag("Solid");
         }
 
         if (Input.GetButtonDown("Jump") && grounded)
