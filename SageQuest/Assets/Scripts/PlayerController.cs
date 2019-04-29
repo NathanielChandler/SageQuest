@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour {
     public ContactFilter2D contactFilter;
 
     private bool grounded = false;
-    private bool collided = false;
+    // private bool collided = false;
+    private bool positiveXCollision = false;
+    private bool negativeXCollision = false;
     private Rigidbody2D rigidBody;
 
 
@@ -21,7 +23,7 @@ public class PlayerController : MonoBehaviour {
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        contactPoints = new ContactPoint2D[2];
+        contactPoints = new ContactPoint2D[10];
     }
 
     // Update is called once per frame
@@ -30,20 +32,43 @@ public class PlayerController : MonoBehaviour {
         rigidBody.GetContacts(contactPoints);
 
         if (contactPoints.Length > 0) {
-            grounded = contactPoints[0].normal.y == 1 && contactPoints[0].collider.CompareTag("Solid");
-            collided = contactPoints[0].normal.x != 0 && contactPoints[0].collider.CompareTag("Solid");
+
+            foreach (ContactPoint2D point in contactPoints)
+            {
+                if(point.normal.y == 1 && point.collider.CompareTag("Solid"))
+                {
+                    grounded = true;
+                    break;
+                } else
+                {
+                    grounded = false;
+                }
+            }
+
+            // grounded = (contactPoints[0].normal.y == 1 || contactPoints[1].normal.y == 1) && contactPoints[0].collider.CompareTag("Solid");
+            // collided = contactPoints[0].normal.x != 0 && contactPoints[0].collider.CompareTag("Solid");
+            positiveXCollision = contactPoints[0].normal.x < 0 && contactPoints[0].collider.CompareTag("Solid");
+            negativeXCollision = contactPoints[0].normal.x > 0 && contactPoints[0].collider.CompareTag("Solid");
+        } else
+        {
+            grounded = false;
+            positiveXCollision = false;
+            negativeXCollision = false;
         }
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
             jump = true;
+            grounded = false;
         }
+
+        Debug.Log(grounded);
     }
 
     void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        if (!collided){ 
+        if (!positiveXCollision && !negativeXCollision){ 
             //Speed up player to max Speed
             if (horizontalInput * rigidBody.velocity.x < maxSpeed)
                 rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
@@ -68,6 +93,17 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        if(!positiveXCollision && horizontalInput < 0)
+        {
+            rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
+        }
+
+        if (!negativeXCollision && horizontalInput > 0)
+        {
+            rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
+        }
+
         //Flip Player Model
         if (horizontalInput> 0 && !facingRight)
             Flip();
