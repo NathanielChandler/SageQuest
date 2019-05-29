@@ -576,9 +576,8 @@ MonoBehaviour:
   backSpeed: -2
   distanceTravel: 2
   distanceTravel2: -2
-  right: 0
-  up: 1
-  hasTraveledDistance: 1
+  upRight: 0
+  hasTraveledDistance: 0
 --- !u!1001 &1064387449
 Prefab:
   m_ObjectHideFlags: 0

@@ -13,8 +13,8 @@ public class MovingPlatform : MonoBehaviour
     public float distanceTravel2 = 1f; //reference to send platform back
 
     //Checks direction the platform moves and postion
-    public bool right = false;
-    public bool up = false;
+    public bool upRight = false; //true plafrom goes up false platform goes right
+    
     public bool hasTraveledDistance = false;
 
     //Direction of Movement
@@ -55,53 +55,28 @@ public class MovingPlatform : MonoBehaviour
 
     public void checkDistance()
     {
-        if (hasTraveledDistance == true)
-        {
-            distance += Time.deltaTime;
-        }
-        if (hasTraveledDistance == false)
-        {
-            distance -= Time.deltaTime;
-        }
+        distance += hasTraveledDistance ? Time.deltaTime : (-1 * Time.deltaTime);
     }
 
     //controls direction platform moves in
     public void CheckDirection()
     {
-        if (up == true)
-        {
-            CheckPostionUp();
-        }
-        else if (right == true)
-        {
-            CheckPostionRight();
-        }
+            if (this.upRight)
+                CheckPostionUp();
+            else
+                CheckPostionRight();
     }
 
     //Sends platform up or down
     public void CheckPostionUp()
     {
-        if (hasTraveledDistance == false)
-        {
-            StartCoroutine(MoveUp());
-        }
-        else if (hasTraveledDistance == true)
-        {
-            StartCoroutine(GoBackUp());
-        }
+        StartCoroutine((hasTraveledDistance ? GoBackUp() : MoveUp()));
     }
 
     //Sends Platform left or right
     public void CheckPostionRight()
     {
-        if (hasTraveledDistance == false)
-        {
-            StartCoroutine(MoveRight());
-        }
-        else if (hasTraveledDistance == true)
-        {
-            StartCoroutine(GoBackRight());
-        }
+        StartCoroutine((hasTraveledDistance ? GoBackRight() : MoveRight()));
     }
 
     IEnumerator MoveRight()
