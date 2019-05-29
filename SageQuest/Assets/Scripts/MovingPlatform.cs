@@ -10,7 +10,7 @@ public class MovingPlatform : MonoBehaviour
     public float speed = 1f;
     public float backSpeed = 1f;
     public float distanceTravel = 1f;
-    public float distanceTravel2 = 1f;
+    public float distanceTravel2 = 1f; //reference to send platform back
 
     //Checks direction the platform moves and postion
     public bool right = false;
@@ -23,7 +23,7 @@ public class MovingPlatform : MonoBehaviour
 
     private Vector3 initialPosition;
 
-    public float distance = 1f;
+    private float distance = 1f; //use as refrence for
 
     // Use this for initialization
     void Start()
@@ -106,27 +106,27 @@ public class MovingPlatform : MonoBehaviour
 
     IEnumerator MoveRight()
     {
-        transform.position -= moveRight * speed * Time.fixedDeltaTime;
+        transform.position += moveRight * speed * Time.fixedDeltaTime;
         yield return null;
     }
 
     IEnumerator MoveUp()
     {
-        transform.position -= moveUp * speed * Time.fixedDeltaTime;
+        transform.position += moveUp * speed * Time.fixedDeltaTime;
         yield return null;
     }
 
     //Sends platform back to inital postion
     IEnumerator GoBackUp()
     {
-        transform.position -= moveUp * backSpeed * Time.fixedDeltaTime;
+        transform.position += moveUp * backSpeed * Time.fixedDeltaTime;
         yield return null;
     }
 
     //Sends platform back to inital postion
     IEnumerator GoBackRight()
     {
-        transform.position -= moveRight * backSpeed * Time.fixedDeltaTime; 
+        transform.position += moveRight * backSpeed * Time.fixedDeltaTime; 
         yield return null;
     }
 }

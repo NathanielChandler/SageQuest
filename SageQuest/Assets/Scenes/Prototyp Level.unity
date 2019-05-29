@@ -522,7 +522,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4143678349903142, guid: 2ccd2f50c2a13ed4b98b68c51d9d6689, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4143678349903142, guid: 2ccd2f50c2a13ed4b98b68c51d9d6689, type: 2}
       propertyPath: m_LocalPosition.z
@@ -572,12 +572,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 1006966296}
-  speed: 10
-  backSpeed: -10
-  distanceTravel: 5
-  right: 1
-  up: 0
-  hasTraveledDistance: 0
+  speed: 2
+  backSpeed: -2
+  distanceTravel: 2
+  distanceTravel2: -2
+  right: 0
+  up: 1
+  hasTraveledDistance: 1
 --- !u!1001 &1064387449
 Prefab:
   m_ObjectHideFlags: 0
