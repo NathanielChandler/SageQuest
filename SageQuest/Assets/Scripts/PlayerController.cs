@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public bool jump = false;
@@ -13,7 +14,8 @@ public class PlayerController : MonoBehaviour {
     public ContactFilter2D contactFilter;
 
     private bool grounded = false;
-    private bool collided = false;
+    private bool positiveXCollision = false;
+    private bool negativeXCollision = false;
     private Rigidbody2D rigidBody;
 
 
@@ -21,29 +23,74 @@ public class PlayerController : MonoBehaviour {
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        contactPoints = new ContactPoint2D[2];
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        contactPoints = new ContactPoint2D[10];
         rigidBody.GetContacts(contactPoints);
 
-        if (contactPoints.Length > 0) {
-            grounded = contactPoints[0].normal.y == 1;
-            collided = contactPoints[0].normal.x != 0;
+        if (contactPoints[0].collider != null)
+        {
+
+            foreach (ContactPoint2D point in contactPoints)
+            {
+                if (point.normal.y == 1 && point.collider.CompareTag("Solid"))
+                {
+                    grounded = true;
+                    break;
+                }
+                else
+                {
+                    grounded = false;
+                }
+            }
+
+            foreach (ContactPoint2D point in contactPoints)
+            {
+                if(point.normal.x < 0 && point.collider.CompareTag("Solid"))
+                {
+                    positiveXCollision = true;
+                    break;
+                } 
+                else
+                {
+                    positiveXCollision = false;
+                }
+
+                if (point.normal.x > 0 && point.collider.CompareTag("Solid"))
+                {
+                    negativeXCollision = true;
+                    break;
+                }
+                else
+                {
+                    negativeXCollision = false;
+                }
+            }
+        }
+        else
+        {
+            grounded = false;
+            positiveXCollision = false;
+            negativeXCollision = false;
         }
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
             jump = true;
+            grounded = false;
         }
+
     }
 
     void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        if (!collided){ 
+        if (!positiveXCollision && !negativeXCollision)
+        {
             //Speed up player to max Speed
             if (horizontalInput * rigidBody.velocity.x < maxSpeed)
                 rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
@@ -54,7 +101,7 @@ public class PlayerController : MonoBehaviour {
             // Slow Down Player
             if (horizontalInput == 0 && rigidBody.velocity.x != 0)
             {
-                if (rigidBody.velocity.x > 1)
+                if (rigidBody.velocity.x  > 1)
                 {
                     rigidBody.AddForce(Vector2.left * (moveForce / 4));
                 }
@@ -68,10 +115,21 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        else if (positiveXCollision && horizontalInput < 0)
+        {
+            rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
+        }
+
+        else if (negativeXCollision && horizontalInput > 0)
+        {
+            rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
+        }
+
         //Flip Player Model
-        if (horizontalInput> 0 && !facingRight)
+        if (horizontalInput > 0 && !facingRight)
             Flip();
-        else if (horizontalInput< 0 && facingRight)
+        else if (horizontalInput < 0 && facingRight)
             Flip();
 
         if (jump)
@@ -87,5 +145,24 @@ public class PlayerController : MonoBehaviour {
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("moving"))
+        {
+            rigidBody.transform.SetParent(collision.gameObject.transform);
+        }
+
+        Debug.Log(collision.gameObject.name.Contains("moving"));
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("moving"))
+        {
+            rigidBody.transform.SetParent(null);
+        }
     }
 }
