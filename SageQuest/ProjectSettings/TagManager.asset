@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Solid
   layers:
   - Default
   - TransparentFX
@@ -13,16 +14,16 @@ TagManager:
   - UI
   - 
   - 
+  - Sky
+  - Sun
+  - 
+  - 
+  - 
+  - 
   - Grass
   - Player
   - Platform
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - UI
@@ -40,4 +41,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sun
+    uniqueID: 3865644567
+    locked: 0
+  - name: Platform
+    uniqueID: 2330478045
+    locked: 0
+  - name: Grass
+    uniqueID: 1527291837
+    locked: 0
+  - name: Player
+    uniqueID: 2610819509
+    locked: 0
+  - name: Sky
+    uniqueID: 1621141531
+    locked: 0
+  - name: Ground
+    uniqueID: 2594523895
+    locked: 0
+  - name: UI
+    uniqueID: 1085031515
     locked: 0
