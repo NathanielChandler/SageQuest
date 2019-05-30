@@ -54,12 +54,20 @@ public class PlayerController : MonoBehaviour
                 {
                     positiveXCollision = true;
                     break;
+                } 
+                else
+                {
+                    positiveXCollision = false;
                 }
 
                 if (point.normal.x > 0 && point.collider.CompareTag("Solid"))
                 {
                     negativeXCollision = true;
                     break;
+                }
+                else
+                {
+                    negativeXCollision = false;
                 }
             }
         }
@@ -76,7 +84,6 @@ public class PlayerController : MonoBehaviour
             grounded = false;
         }
 
-        Debug.Log(grounded);
     }
 
     void FixedUpdate()
@@ -109,12 +116,12 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (!positiveXCollision && horizontalInput < 0)
+        else if (positiveXCollision && horizontalInput < 0)
         {
             rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
         }
 
-        if (!negativeXCollision && horizontalInput > 0)
+        else if (negativeXCollision && horizontalInput > 0)
         {
             rigidBody.AddForce(Vector2.right * horizontalInput * moveForce);
         }
@@ -138,5 +145,24 @@ public class PlayerController : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("moving"))
+        {
+            rigidBody.transform.SetParent(collision.gameObject.transform);
+        }
+
+        Debug.Log(collision.gameObject.name.Contains("moving"));
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("moving"))
+        {
+            rigidBody.transform.SetParent(null);
+        }
     }
 }
