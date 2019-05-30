@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053f85a79f8c3584583287856e3c1ef6, type: 3}
+  m_Name: JetPack Settings
+  m_EditorClassIdentifier: 
+  remainingFuel: 100
+  fuelUsage: 0.5
+  fuelFill: 0.5
+  verticalAcceleration: 15
+  partSys: {fileID: 0}
+  fuelBar: {fileID: 0}
+  playerAudio: {fileID: 0}
+  jetpackPrefab: {fileID: 1994606819842156, guid: 5c3f87f5348649147afde6085752cf7e,
+    type: 2}
+  jetPackPos: {x: -0.64, y: 0, z: 0}
