@@ -150,17 +150,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("moving"))
+        if (collision.gameObject.name.Contains("Moving Platform"))
         {
             rigidBody.transform.SetParent(collision.gameObject.transform);
         }
 
-        Debug.Log(collision.gameObject.name.Contains("moving"));
+        Debug.Log(collision.gameObject.name.Contains("Moving Platform"));
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("moving"))
+        if (collision.gameObject.name.Contains("Moving Platform"))
         {
             rigidBody.transform.SetParent(null);
         }
