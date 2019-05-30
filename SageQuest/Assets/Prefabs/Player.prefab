@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1172322257080458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.225, y: -0.176, z: 0}
+  m_LocalPosition: {x: -4.225, y: 5.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
   jump: 0
   moveForce: 40
   maxSpeed: 10
-  jumpForce: 100
+  jumpForce: 500
   groundCheck: {fileID: 0}
   contactFilter:
     useTriggers: 0
