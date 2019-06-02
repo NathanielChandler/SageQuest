@@ -325,6 +325,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
   m_IsPrefabParent: 0
@@ -370,6 +375,11 @@ Prefab:
     - target: {fileID: 1633901924114580, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
       propertyPath: m_Name
       value: grass (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
@@ -527,6 +537,11 @@ Prefab:
     - target: {fileID: 1633901924114580, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
       propertyPath: m_Name
       value: grass (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
@@ -869,6 +884,11 @@ Prefab:
       propertyPath: m_Name
       value: grass (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
   m_IsPrefabParent: 0
@@ -920,6 +940,11 @@ Prefab:
       propertyPath: m_Name
       value: grass (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
   m_IsPrefabParent: 0
@@ -970,6 +995,11 @@ Prefab:
     - target: {fileID: 1633901924114580, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
       propertyPath: m_Name
       value: grass (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
@@ -1381,6 +1411,11 @@ Prefab:
       propertyPath: m_Name
       value: grass (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
   m_IsPrefabParent: 0
@@ -1426,6 +1461,11 @@ Prefab:
     - target: {fileID: 1633901924114580, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
       propertyPath: m_Name
       value: grass (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
@@ -1781,6 +1821,11 @@ Prefab:
       propertyPath: m_Name
       value: grass (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
   m_IsPrefabParent: 0
@@ -1831,6 +1876,11 @@ Prefab:
     - target: {fileID: 1633901924114580, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
       propertyPath: m_Name
       value: grass (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
@@ -1886,6 +1936,42 @@ Prefab:
     - target: {fileID: 1172322257080458, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 212217966253813142, guid: 54a46f401db96744182e9d6f477fde9e,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d698c94a2f4be14688d3515082364ac,
+        type: 3}
+    - target: {fileID: 61418575232041504, guid: 54a46f401db96744182e9d6f477fde9e,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 61418575232041504, guid: 54a46f401db96744182e9d6f477fde9e,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 61418575232041504, guid: 54a46f401db96744182e9d6f477fde9e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61418575232041504, guid: 54a46f401db96744182e9d6f477fde9e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 61418575232041504, guid: 54a46f401db96744182e9d6f477fde9e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 61418575232041504, guid: 54a46f401db96744182e9d6f477fde9e,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
@@ -2237,6 +2323,11 @@ Prefab:
       propertyPath: m_Name
       value: grass (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
   m_IsPrefabParent: 0
@@ -2550,6 +2641,11 @@ Prefab:
       propertyPath: m_Name
       value: grass (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
   m_IsPrefabParent: 0
@@ -2595,6 +2691,11 @@ Prefab:
     - target: {fileID: 1633901924114580, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
       propertyPath: m_Name
       value: grass (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
@@ -2675,6 +2776,77 @@ Transform:
   m_PrefabParentObject: {fileID: 4452402540602776, guid: 2bbff8a427b308a44909522959a939a0,
     type: 2}
   m_PrefabInternal: {fileID: 1423635831}
+--- !u!1 &1824726734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1824726736}
+  - component: {fileID: 1824726735}
+  m_Layer: 0
+  m_Name: tree of life 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1824726735
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824726734}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8af498c9a29239646bde8c0e02021adf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.86, y: 4.28}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &1824726736
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824726734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.24, y: 3.85, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1857356936 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4452402540602776, guid: 2bbff8a427b308a44909522959a939a0,
@@ -2880,6 +3052,11 @@ Prefab:
     - target: {fileID: 1633901924114580, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
       propertyPath: m_Name
       value: grass (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212154403663019124, guid: e24e41861ef72084fa72d70ddfe08a69,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24e41861ef72084fa72d70ddfe08a69, type: 2}
