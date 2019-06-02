@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
+
 public class PlayerController : MonoBehaviour
 {
     //Animation Stuff
@@ -154,9 +155,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("Moving Platform" ))
+        if (collision.gameObject.name.Contains("Moving Platform"))
         {
             rigidBody.transform.SetParent(collision.gameObject.transform);
+            animator.SetBool("IsJumping", false);
+        }
+        if (collision.gameObject.name.Contains("Ground"))
+        {
             animator.SetBool("IsJumping", false);
         }
 
