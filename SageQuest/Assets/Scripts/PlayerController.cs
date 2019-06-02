@@ -3,6 +3,8 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    //Animation Stuff
+    public Animator animator;
 
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public bool jump = false;
@@ -80,6 +82,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
+            animator.SetBool("IsJumping", true);
             jump = true;
             grounded = false;
         }
@@ -89,6 +92,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
+
         if (!positiveXCollision && !negativeXCollision)
         {
             //Speed up player to max Speed
@@ -146,13 +151,13 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("Moving Platform"))
+        if (collision.gameObject.name.Contains("Moving Platform" ))
         {
             rigidBody.transform.SetParent(collision.gameObject.transform);
+            animator.SetBool("IsJumping", false);
         }
 
         Debug.Log(collision.gameObject.name.Contains("Moving Platform"));
