@@ -8447,7 +8447,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 63.82
+      value: 62.3
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13269,11 +13269,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4279536193303870, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.4
+      value: 52.3
       objectReference: {fileID: 0}
     - target: {fileID: 4279536193303870, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.5
+      value: 98.7
       objectReference: {fileID: 0}
     - target: {fileID: 4279536193303870, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13602,7 +13602,7 @@ Prefab:
     - target: {fileID: 114432386536017498, guid: 3c0fa8575befa6f4894e972edcbdd950,
         type: 2}
       propertyPath: rotateLeft
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4214806797853388, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
       propertyPath: m_RootOrder
@@ -13629,6 +13629,10 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894391914466366, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
+      propertyPath: m_Name
+      value: spinning mid
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
@@ -16082,6 +16086,10 @@ Prefab:
       propertyPath: m_Name
       value: spinning Platform (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1894391914466366, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
+      propertyPath: m_Name
+      value: spinning mid
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
   m_IsPrefabParent: 0
@@ -18406,7 +18414,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 65.37
+      value: 60.8
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -20754,6 +20762,10 @@ Prefab:
       propertyPath: rotateLeft
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1894391914466366, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
+      propertyPath: m_Name
+      value: spinning mid
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
   m_IsPrefabParent: 0
@@ -22282,7 +22294,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 65.15
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -25632,7 +25644,7 @@ Prefab:
     - target: {fileID: 114432386536017498, guid: 3c0fa8575befa6f4894e972edcbdd950,
         type: 2}
       propertyPath: rotateLeft
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4214806797853388, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
       propertyPath: m_RootOrder
@@ -25659,6 +25671,10 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894391914466366, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
+      propertyPath: m_Name
+      value: spinning mid
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
@@ -26027,7 +26043,7 @@ Prefab:
     - target: {fileID: 114432386536017498, guid: 3c0fa8575befa6f4894e972edcbdd950,
         type: 2}
       propertyPath: rotateLeft
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4214806797853388, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
       propertyPath: m_RootOrder
@@ -26054,6 +26070,10 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894391914466366, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
+      propertyPath: m_Name
+      value: spinning mid
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c0fa8575befa6f4894e972edcbdd950, type: 2}
