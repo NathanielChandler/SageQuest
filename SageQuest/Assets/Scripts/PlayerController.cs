@@ -171,10 +171,10 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.name.Contains("Herb"))
         {
-            numberOfHerbs += 1;
+            numberOfHerbs += collision.gameObject.GetComponent<HerbScript>().GetValue();
         }
 
-        Debug.Log(grounded);
+        Debug.Log(numberOfHerbs);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
