@@ -18,18 +18,19 @@ public class ManagerScene : MonoBehaviour
     public bool inCredits = false;
     public float SceneTimer;
     public float gameLogoTimer;
+    public int herb;
 
     // Use this for initialization
     void Start()
     {
         SceneTimer = 15;
+        gameLogoTimer = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameDone = gameM.GetComponent<GameManager>().playerWin;
-        CheckScene();    
+        CheckScene();
     }
 
     private void LoadGameScene()
@@ -44,6 +45,11 @@ public class ManagerScene : MonoBehaviour
 
     private void CheckScene()
     {
+        herb = gameM.GetComponent<GameManager>().herbsGathered;
+        if(herb >= 4)
+        {
+            gameDone = true;
+        }
         if (openingSceneDone == false)
         {
             OpeningScene();
@@ -85,7 +91,7 @@ public class ManagerScene : MonoBehaviour
 
     private void EndingScene()
     {
-        SceneTimer -= 1 * Time.deltaTime;     
+        SceneTimer -= 1 * Time.deltaTime;
         if (SceneTimer <= 0)
         {
             victoryScreen.SetActive(false);
