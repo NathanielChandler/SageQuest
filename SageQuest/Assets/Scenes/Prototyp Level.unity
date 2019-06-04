@@ -3472,7 +3472,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (59)
+      value: Movingw Platform (59)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -3492,12 +3492,12 @@ Prefab:
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel2
-      value: -0.3
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5122,7 +5122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (43)
+      value: Movingw Platform (43)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -7975,7 +7975,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 60.3
+      value: 63.82
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8003,7 +8003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (50)
+      value: Movingw Platform (50)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -9582,7 +9582,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (36)
+      value: Movingw Platform (36)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -12725,11 +12725,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4279536193303870, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.225
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 4279536193303870, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.33
+      value: 99.2
       objectReference: {fileID: 0}
     - target: {fileID: 4279536193303870, guid: 54a46f401db96744182e9d6f477fde9e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14024,7 +14024,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (41)
+      value: Movingw Platform (41)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -14373,7 +14373,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (67)
+      value: Movingw Platform (67)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -15578,7 +15578,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (69)
+      value: Movingw Platform (69)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -15724,7 +15724,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 60.3
+      value: 56.3
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15752,7 +15752,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (49)
+      value: Movingw Platform (49)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -15772,12 +15772,12 @@ Prefab:
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel2
-      value: -0.3
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -16741,7 +16741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (62)
+      value: Movingw Platform (62)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -16761,12 +16761,12 @@ Prefab:
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel2
-      value: -0.3
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -17299,7 +17299,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (68)
+      value: Movingw Platform (68)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -17701,7 +17701,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 63.37
+      value: 65.37
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -17729,7 +17729,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (55)
+      value: Movingw Platform (55)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -20093,7 +20093,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (46)
+      value: Movingw Platform (46)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -21026,7 +21026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (61)
+      value: Movingw Platform (61)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -21046,12 +21046,12 @@ Prefab:
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
       propertyPath: distanceTravel2
-      value: -0.3
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -21523,7 +21523,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 60.3
+      value: 65.15
       objectReference: {fileID: 0}
     - target: {fileID: 4183629609339238, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -21551,7 +21551,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (51)
+      value: Movingw Platform (51)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -22186,7 +22186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (42)
+      value: Movingw Platform (42)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
@@ -24571,7 +24571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609792632320812, guid: 89d5276272dd6d445a9de1f939d8fabf, type: 2}
       propertyPath: m_Name
-      value: Moving Platform (54)
+      value: Movingw Platform (54)
       objectReference: {fileID: 0}
     - target: {fileID: 114810755521547058, guid: 89d5276272dd6d445a9de1f939d8fabf,
         type: 2}
