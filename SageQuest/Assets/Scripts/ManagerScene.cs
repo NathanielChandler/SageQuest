@@ -51,7 +51,7 @@ public class ManagerScene : MonoBehaviour
         {
             gameDone = true;
         }
-        if (openingSceneDone == false)
+        if (openingSceneDone == false && inCredits == false)
         {
             OpeningScene();
         }
@@ -62,6 +62,10 @@ public class ManagerScene : MonoBehaviour
         if (gameDone == true)
         {
             LoadEndingScene();
+        }
+        if (inCredits == true)
+        {
+            EndingScene();
         }
     }
     private void OpeningScene()
@@ -93,7 +97,7 @@ public class ManagerScene : MonoBehaviour
     private void EndingScene()
     {
         SceneTimer -= 1 * Time.deltaTime;
-        if (SceneTimer <= 0)
+        if (SceneTimer <= 4)
         {
             victoryScreen.SetActive(false);
             credits.SetActive(true);
