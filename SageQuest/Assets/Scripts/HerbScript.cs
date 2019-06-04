@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HerbScript : MonoBehaviour
 {
-
+    public int value = 1;
     // Use this for initialization
     void Start()
     {
@@ -21,7 +21,23 @@ public class HerbScript : MonoBehaviour
     {
         if (collision.gameObject.name.Contains("Player"))
         {
+            value--;
+        }
+        if(value == 0)
+        {
             Destroy(gameObject);
+        }
+    }
+
+    public int GetValue()
+    {
+        if(value > 0)
+        {
+            return value;
+        }
+        else
+        {
+            return 0;
         }
     }
 }
