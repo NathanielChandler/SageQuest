@@ -15,6 +15,7 @@ public class ManagerScene : MonoBehaviour
     public bool openingSceneDone = false;
     public bool gameDone = false;
     public bool creditsDone = false;
+    public bool inGame = false;
     public bool inCredits = false;
     public float SceneTimer;
     public float gameLogoTimer;
@@ -54,7 +55,7 @@ public class ManagerScene : MonoBehaviour
         {
             OpeningScene();
         }
-        if (openingSceneDone == true)
+        if (openingSceneDone == true && inGame == false)
         {
             LoadGameScene();
         }
