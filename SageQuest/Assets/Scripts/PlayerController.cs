@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System;
 
+
 public class PlayerController : MonoBehaviour
 {
+    //Animation Stuff
+    public Animator animator;
 
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public bool jump = false;
@@ -17,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool positiveXCollision = false;
     private bool negativeXCollision = false;
     private Rigidbody2D rigidBody;
+    private bool onPlatform = false;
 
 
     // Use this for initialization
@@ -32,7 +36,7 @@ public class PlayerController : MonoBehaviour
         contactPoints = new ContactPoint2D[10];
         rigidBody.GetContacts(contactPoints);
 
-        if (contactPoints[0].collider != null)
+        if (contactPoints[0].collider != null && !onPlatform)
         {
 
             foreach (ContactPoint2D point in contactPoints)
@@ -73,14 +77,16 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            grounded = false;
             positiveXCollision = false;
             negativeXCollision = false;
+            grounded = onPlatform;
         }
+
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
-            jump = true;
+            animator.SetBool("IsJumping", true);
+            rigidBody.AddForce(new Vector2(0f, jumpForce));
             grounded = false;
         }
 
@@ -89,6 +95,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
+
         if (!positiveXCollision && !negativeXCollision)
         {
             //Speed up player to max Speed
@@ -103,11 +111,11 @@ public class PlayerController : MonoBehaviour
             {
                 if (rigidBody.velocity.x  > 1)
                 {
-                    rigidBody.AddForce(Vector2.left * (moveForce / 4));
+                    rigidBody.AddForce(Vector2.left * (moveForce / 2));
                 }
                 else if (rigidBody.velocity.x < -1)
                 {
-                    rigidBody.AddForce(Vector2.right * (moveForce / 4));
+                    rigidBody.AddForce(Vector2.right * (moveForce / 2));
                 }
                 else
                 {
@@ -132,11 +140,7 @@ public class PlayerController : MonoBehaviour
         else if (horizontalInput < 0 && facingRight)
             Flip();
 
-        if (jump)
-        {
-            rigidBody.AddForce(new Vector2(0f, jumpForce));
-            jump = false;
-        }
+        
     }
 
     void Flip()
@@ -146,23 +150,34 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("moving"))
+        if (collision.gameObject.name.Contains("Moving Platform"))
         {
             rigidBody.transform.SetParent(collision.gameObject.transform);
+            onPlatform = true;
+            animator.SetBool("IsJumping", false);
+        }
+        if (collision.gameObject.name.Contains("spinning"))
+        {
+            onPlatform = true;
+            animator.SetBool("IsJumping", false);
+        }
+        if (collision.gameObject.name.Contains("Ground"))
+        {
+            animator.SetBool("IsJumping", false);
         }
 
-        Debug.Log(collision.gameObject.name.Contains("moving"));
+        Debug.Log(grounded);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("moving"))
+        if (collision.gameObject.name.Contains("Moving Platform"))
         {
             rigidBody.transform.SetParent(null);
+            onPlatform = false;
         }
     }
 }
