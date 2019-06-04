@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ManagerScene : MonoBehaviour
 {
+    public GameObject gameM;
     public GameObject victoryScreen;
     public GameObject credits;
     public GameObject companyLogo;
@@ -14,14 +15,16 @@ public class ManagerScene : MonoBehaviour
     public bool openingSceneDone = false;
     public bool gameDone = false;
     public bool creditsDone = false;
+    public bool inCredits = false;
     public float SceneTimer;
     public float gameLogoTimer;
+    public int herb;
 
-    public
     // Use this for initialization
     void Start()
     {
         SceneTimer = 15;
+        gameLogoTimer = 3;
     }
 
     // Update is called once per frame
@@ -42,6 +45,11 @@ public class ManagerScene : MonoBehaviour
 
     private void CheckScene()
     {
+        herb = gameM.GetComponent<GameManager>().herbsGathered;
+        if(herb >= 4)
+        {
+            gameDone = true;
+        }
         if (openingSceneDone == false)
         {
             OpeningScene();
@@ -81,13 +89,13 @@ public class ManagerScene : MonoBehaviour
         }
     }
 
-    private void GameScene()
-    {
-
-    }
-
     private void EndingScene()
     {
-
+        SceneTimer -= 1 * Time.deltaTime;
+        if (SceneTimer <= 0)
+        {
+            victoryScreen.SetActive(false);
+            credits.SetActive(true);
+        }
     }
 }

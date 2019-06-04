@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject bonsaiTree3;
     public GameObject bonsaiTree4;
 
+    public bool playerWin = false;
+
 
     public int herbsGathered;
 
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour
         {
             bonsaiTree3.SetActive(false);
             bonsaiTree4.SetActive(true);
+            playerWin = true;
         }
     }
 }
