@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public ContactPoint2D[] contactPoints;
     public ContactFilter2D contactFilter;
+    public int numberOfHerbs = 0;
 
     private bool grounded = false;
     private bool positiveXCollision = false;
@@ -167,6 +168,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.name.Contains("Ground"))
         {
             animator.SetBool("IsJumping", false);
+        }
+        if (collision.gameObject.name.Contains("Herb"))
+        {
+            numberOfHerbs += 1;
         }
 
         Debug.Log(grounded);
