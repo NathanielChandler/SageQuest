@@ -19,25 +19,12 @@ public class HerbScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("Player"))
-        {
-            value--;
-        }
-        if(value == 0)
-        {
-            Destroy(gameObject);
-        }
     }
 
     public int GetValue()
     {
-        if(value > 0)
-        {
-            return value;
-        }
-        else
-        {
-            return 0;
-        }
+        
+        DestroyObject(gameObject);
+        return value--;
     }
 }
