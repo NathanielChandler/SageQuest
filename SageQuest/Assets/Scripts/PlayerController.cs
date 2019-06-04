@@ -184,5 +184,10 @@ public class PlayerController : MonoBehaviour
             rigidBody.transform.SetParent(null);
             onPlatform = false;
         }
+
+        if (collision.gameObject.name.Contains("spinning"))
+        {
+            onPlatform = false;
+        }
     }
 }
